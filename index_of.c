@@ -14,5 +14,6 @@ int main(int argc, char **argv) {
         printf("You must provide a string to search over\n");
         return 1;
     }
-    printf("Index of f in %s: %d\n", argv[1], index_of(argv[1], 'f'));
+    int result = index_of(argv[1], 'f');
+    printf("Index of f in %s: %d\n", argv[1], result);
 }
