@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int index_of(char *str, char ch) {
-    for (int i = 0; i < sizeof(str) / sizeof(char); ++i) {
+    for (int i = 0; str[i]!='\0'; i++) {
         if (str[i] == ch) {
             return i;
         }

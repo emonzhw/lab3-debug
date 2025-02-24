@@ -2,7 +2,7 @@
 #define CHARSHIFT 4
 
 void shift_chars(char *str, int amount) {
-    for (char *ch = str; ch != 0; ++ch) {
+    for (char *ch = str; *ch != 0; ch++) {
         if (*ch >= 'A' && *ch <= 'Z') {
             *ch = (*ch - 'A' + amount) % 26 + 'A';
         } else if (*ch >= 'a' && *ch <= 'z') {
